@@ -1,0 +1,56 @@
+;RENESAS OPTIMIZING LINKER GENERATED FILE 2015.09.13
+;fsymbol = .constf, .text, .textf, .bss, .sbss, .data, .sdata, .RLIB, .SLIB
+
+;SECTION NAME = .constf
+;SECTION NAME = .text
+;SECTION NAME = .textf
+ .public _R_Systeminit
+_R_Systeminit .equ 0x00000178
+ .public _hdwinit_boot
+_hdwinit_boot .equ 0x00000193
+ .public _R_CGC_Create
+_R_CGC_Create .equ 0x00000198
+ .public _R_CGC_Get_ResetSource
+_R_CGC_Get_ResetSource .equ 0x000001a9
+ .public _R_PORT_Create
+_R_PORT_Create .equ 0x000001ac
+ .public _R_SAU0_Create
+_R_SAU0_Create .equ 0x000001ed
+ .public _R_UART1_Create
+_R_UART1_Create .equ 0x000001fc
+ .public _R_UART1_Start
+_R_UART1_Start .equ 0x0000028c
+ .public _R_UART1_Stop
+_R_UART1_Stop .equ 0x000002b6
+ .public _R_UART1_Send_Byte
+_R_UART1_Send_Byte .equ 0x000002d7
+ .public _R_UART1_Send_String
+_R_UART1_Send_String .equ 0x0000030b
+ .public _R_TAU0_Create
+_R_TAU0_Create .equ 0x0000033e
+ .public _R_TAU0_Channel0_Start
+_R_TAU0_Channel0_Start .equ 0x000003bb
+ .public _R_TAU0_Channel0_Stop
+_R_TAU0_Channel0_Stop .equ 0x000003c5
+ .public _delay
+_delay .equ 0x000003cf
+ .public _bsp_di_is_hi
+_bsp_di_is_hi .equ 0x000003fd
+ .public _WriteFlash
+_WriteFlash .equ 0x00000406
+ .public _GetByte
+_GetByte .equ 0x0000041f
+ .public _XmodemProg
+_XmodemProg .equ 0x00000489
+ .public _main
+_main .equ 0x00000668
+ .public _R_MAIN_UserInit
+_R_MAIN_UserInit .equ 0x000007c7
+ .public _ErrorHandler
+_ErrorHandler .equ 0x000007cb
+;SECTION NAME = .bss
+;SECTION NAME = .sbss
+;SECTION NAME = .data
+;SECTION NAME = .sdata
+;SECTION NAME = .RLIB
+;SECTION NAME = .SLIB

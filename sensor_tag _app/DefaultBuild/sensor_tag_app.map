@@ -1,0 +1,1186 @@
+Renesas Optimizing Linker (W2.03.00 )             13-Sep-2015 23:02:04
+
+*** Options ***
+
+-subcommand=DefaultBuild\sensor_tag_app.clnk
+-Input=DefaultBuild\cstart.obj
+-Input=DefaultBuild\stkinit.obj
+-Input=DefaultBuild\r_main.obj
+-Input=DefaultBuild\r_systeminit.obj
+-Input=DefaultBuild\r_cg_cgc.obj
+-Input=DefaultBuild\r_cg_cgc_user.obj
+-Input=DefaultBuild\r_cg_port.obj
+-Input=DefaultBuild\r_cg_port_user.obj
+-Input=DefaultBuild\r_cg_serial.obj
+-Input=DefaultBuild\r_cg_serial_user.obj
+-Input=DefaultBuild\bsp_dbg.obj
+-Input=DefaultBuild\r_cg_timer.obj
+-Input=DefaultBuild\r_cg_timer_user.obj
+-Input=DefaultBuild\r_cg_intc.obj
+-Input=DefaultBuild\r_cg_intc_user.obj
+-Input=DefaultBuild\ftable.obj
+-SECURITY_ID=00000000000000000000
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F100BE.DVF
+-DEBug
+-NOCOmpress
+-NOOPtimize
+-OUtput=DefaultBuild\sensor_tag_app.abs
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.01.00\lib\rl78cm4s.lib
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.01.00\lib\rl78cm4r.lib
+-OCDBG=84
+-DEBUG_MONITOR=FE00-FFFF
+-USER_OPT_BYTE=EFFFAA
+-SELF
+-LISt
+-SHow=ALL
+-AUTO_SECTION_LAYOUT
+-STARt=.const,.text,.RLIB,.SLIB,.textf,.constf,.data,.sdata/02200,.dataR,.bss/FF500,.sdataR,.sbss/FFE80
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-NOMessage
+-NOLOgo
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+.vect
+                                  00000000  0000007f        80   0
+.option_byte
+                                  000000c0  000000c3         4   1
+.security_id
+                                  000000c4  000000cd         a   1
+.monitor1
+                                  000000ce  000000d7         a   1
+.jtext_AT2000
+                                  00002000  000020cb        cc   1
+.const
+                                  00002200  000022bc        bd   2
+.text
+                                  000022bd  0000230b        4f   1
+.RLIB
+                                  0000230c  00002efe       bf3   1
+.SLIB
+                                  00002eff  0000519b      229d   1
+.textf
+                                  0000519c  000058e1       746   1
+.constf
+                                  000058e2  000058eb         a   2
+.data
+                                  000058ec  000058ec         0   2
+.sdata
+                                  000058ec  000058ec         0   2
+.monitor2
+                                  0000fe00  0000ffff       200   1
+.dataR
+                                  000ff500  000ff500         0   2
+.bss
+                                  000ff500  000ff6a3       1a4   2
+.sdataR
+                                  000ffe80  000ffe80         0   2
+.sbss
+                                  000ffe80  000ffe80         0   2
+
+*** Total Section Size ***
+
+RAMDATA SECTION:  000001a4 Byte(s)
+ROMDATA SECTION:  0000035f Byte(s)
+PROGRAM SECTION:  000036f1 Byte(s)
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+    STRUCT                                      SIZE
+      MEMBER                        ADDR        SIZE    INFO
+
+SECTION=.vect
+FILE=rlink_generates_01
+                                  00000000  0000007f        80
+
+SECTION=.option_byte
+FILE=rlink_generates_02
+                                  000000c0  000000c3         4
+
+SECTION=.security_id
+FILE=rlink_generates_04
+                                  000000c4  000000cd         a
+
+SECTION=.monitor1
+FILE=rlink_generates_03
+                                  000000ce  000000d7         a
+
+SECTION=.jtext_AT2000
+FILE=DefaultBuild\ftable.obj
+                                  00002000  000020cb        cc
+
+SECTION=.const
+FILE=DefaultBuild\r_main.obj
+                                  00002200  000022bc        bd
+
+SECTION=.text
+FILE=DefaultBuild\cstart.obj
+                                  000022bd  0000230b        4f
+  _start
+                                  000022bd         0   none ,g         1
+  _exit
+                                  0000230a         0   none ,g         1
+
+SECTION=.RLIB
+FILE=_COM_uldiv
+                                  0000230c  00002347        3c
+  __COM_uldiv
+                                  0000230c         0   none ,g         3
+FILE=_COM_fdiv
+                                  00002348  000024f6       1af
+  __COM_fdiv
+                                  0000236f         0   none ,g         2
+FILE=_COM_feq
+                                  000024f7  0000250c        16
+  __COM_feq
+                                  000024f7         0   none ,g         2
+FILE=_COM_fge
+                                  0000250d  00002522        16
+  __COM_fge
+                                  0000250d         0   none ,g         2
+FILE=_COM_flt
+                                  00002523  00002538        16
+  __COM_flt
+                                  00002523         0   none ,g         4
+FILE=_COM_fmul
+                                  00002539  00002653       11b
+  __COM_fmul
+                                  00002577         0   none ,g         3
+FILE=_COM_fne
+                                  00002654  00002664        11
+  __COM_fne
+                                  00002654         0   none ,g         3
+FILE=_COM_ftosl
+                                  00002665  0000266c         8
+  __COM_ftosl
+                                  00002665         0   none ,g         1
+FILE=_COM_funordered
+                                  0000266d  00002677         b
+  __COM_funordered
+                                  0000266d         0   none ,g         4
+FILE=_COM_sidiv
+                                  00002678  0000269d        26
+  __COM_sidiv
+                                  00002678         0   none ,g         2
+FILE=_COM_sirem
+                                  0000269e  000026bf        22
+  __COM_sirem
+                                  0000269e         0   none ,g         1
+FILE=_COM_uidiv
+                                  000026c0  000026ea        2b
+  __COM_uidiv
+                                  000026c0         0   none ,g         4
+FILE=_COM_uirem
+                                  000026eb  00002715        2b
+  __COM_uirem
+                                  000026eb         0   none ,g         4
+FILE=_COM_ulldiv
+                                  00002716  0000273f        2a
+  __COM_ulldiv
+                                  00002716         0   none ,g         1
+FILE=_COM_ullrem
+                                  00002740  00002770        31
+  __COM_ullrem
+                                  00002740         0   none ,g         1
+FILE=_COM_ulrem
+                                  00002771  000027aa        3a
+  __COM_ulrem
+                                  00002771         0   none ,g         1
+FILE=_COM_mulul
+                                  000027ab  00002807        5d
+  __COM_mulul
+                                  000027ab         0   none ,g         1
+FILE=_REL_fcmp
+                                  00002808  0000283f        38
+  __REL_fcmp
+                                  00002808         0   none ,g         3
+FILE=_REL_fordered_core
+                                  00002840  0000285b        1c
+  __REL_fordered_core
+                                  00002840         0   none ,g         4
+FILE=_REL_ftol
+                                  0000285c  00002890        35
+  __REL_ftol
+                                  0000285c         0   none ,g         1
+FILE=_REL_f_check
+                                  00002891  000028c3        33
+  __REL_f_check
+                                  00002891         0   none ,g         2
+FILE=_REL_f_ieee754
+                                  000028c4  000028d3        10
+  __REL_f_ieee754
+                                  000028c4         0   none ,g         2
+FILE=_REL_f_inf
+                                  000028d4  000028dd         a
+  __REL_f_inf
+                                  000028d4         0   none ,g         8
+FILE=_REL_f_round
+                                  000028de  000028fc        1f
+  __REL_f_round
+                                  000028de         0   none ,g         2
+FILE=_REL_lldiv
+                                  000028fd  00002bd8       2dc
+  __REL_lldiv
+                                  00002932         0   none ,g         1
+FILE=_REL_llrem
+                                  00002bd9  00002eae       2d6
+  __REL_llrem
+                                  00002c0f         0   none ,g         1
+FILE=_REL_ltosl
+                                  00002eaf  00002ed3        25
+  __REL_ltosl
+                                  00002eaf         0   none ,g         1
+FILE=_COM_lshr
+                                  00002ed4  00002ee8        15
+  __COM_lshr
+                                  00002ed4         0   none ,g         1
+FILE=_COM_mului
+                                  00002ee9  00002efe        16
+  __COM_mului
+                                  00002ee9         0   none ,g         4
+
+SECTION=.SLIB
+FILE=sprintf
+                                  00002eff  00002fe9        eb
+  _sprintf
+                                  00002eff        d3   func ,g         1
+  __REL_sp@1
+                                  00002fd2        18   func ,l         2
+FILE=strlen
+                                  00002fea  00002ff5         c
+  _strlen
+                                  00002fea         c   func ,g         1
+FILE=_REL_print
+                                  00002ff6  0000518f      219a
+  __REL_print
+                                  00002ff6      1b16   func ,g         1
+  __REL_henkan1@1
+                                  00004b0c        28   func ,l         4
+  __REL_pri@1
+                                  00004b34       2f7   func ,l         3
+  __REL_fltgeti@1
+                                  00004e2b       214   func ,l         2
+  __REL_inmod@1
+                                  0000503f       151   func ,l         2
+FILE=isdigit
+                                  00005190  0000519b         c
+  _isdigit
+                                  00005190         c   func ,g         3
+
+SECTION=.textf
+FILE=DefaultBuild\stkinit.obj
+                                  0000519c  000051df        44
+  _stkinit
+                                  0000519c         0   none ,g         0
+  LSTINIT1
+                                  000051aa         0   none ,l         1
+  LSTINIT2
+                                  000051d4         0   none ,l         2
+  LSTINIT3
+                                  000051df         0   none ,l         2
+FILE=DefaultBuild\r_main.obj
+                                  000051e0  000052c0        e1
+  _main
+                                  000051e0        24   func ,g         1
+  _R_MAIN_UserInit
+                                  00005204         4   func ,g         0
+  _post
+                                  00005208        45   func ,g         1
+  _timer_tick_int_cb
+                                  0000524d        14   func ,g         1
+  _timer_tick_start
+                                  00005261         f   func ,g         1
+  _timer_tick_stop
+                                  00005270         8   func ,g         1
+  _delay
+                                  00005278        2b   func ,g         0
+  _is_timer_tick_expired
+                                  000052a3        1e   func ,g         0
+FILE=DefaultBuild\r_systeminit.obj
+                                  000052c1  000052e8        28
+  _R_Systeminit
+                                  000052c1        23   func ,g         1
+  _hdwinit
+                                  000052e4         5   func ,g         1
+FILE=DefaultBuild\r_cg_cgc.obj
+                                  000052e9  000052f9        11
+  _R_CGC_Create
+                                  000052e9        11   func ,g         1
+FILE=DefaultBuild\r_cg_cgc_user.obj
+                                  000052fa  000052fc         3
+  _R_CGC_Get_ResetSource
+                                  000052fa         3   func ,g         1
+FILE=DefaultBuild\r_cg_port.obj
+                                  000052fd  0000531c        20
+  _R_PORT_Create
+                                  000052fd        20   func ,g         1
+FILE=DefaultBuild\r_cg_serial.obj
+                                  0000531d  00005570       254
+  _R_SAU0_Create
+                                  0000531d         f   func ,g         1
+  _R_UART1_Create
+                                  0000532c        98   func ,g         1
+  _R_UART1_Start
+                                  000053c4        2e   func ,g         1
+  _R_UART1_Stop
+                                  000053f2        25   func ,g         0
+  _R_UART1_Receive
+                                  00005417        18   func ,g         0
+  _R_UART1_Send
+                                  0000542f        26   func ,g         1
+  _R_SAU1_Create
+                                  00005455         f   func ,g         1
+  _R_UART2_Create
+                                  00005464        84   func ,g         1
+  _R_UART2_Start
+                                  000054e8        2a   func ,g         0
+  _R_UART2_Stop
+                                  00005512        21   func ,g         0
+  _R_UART2_Receive
+                                  00005533        18   func ,g         0
+  _R_UART2_Send
+                                  0000554b        26   func ,g         0
+FILE=DefaultBuild\r_cg_serial_user.obj
+                                  00005571  00005624        b4
+  _r_uart1_interrupt_receive
+                                  00005571        1f   func ,g         1
+  _r_uart1_interrupt_error
+                                  00005590        17   func ,g         1
+  _r_uart1_interrupt_send
+                                  000055a7        31   func ,g         1
+  _r_uart2_interrupt_receive
+                                  000055d8        30   func ,g         1
+  _r_uart2_interrupt_send
+                                  00005608        1d   func ,g         1
+FILE=DefaultBuild\bsp_dbg.obj
+                                  00005625  00005644        20
+  _bsp_dbg_print
+                                  00005625        1c   func ,g         a
+  _bsp_dbg_tx_done_set
+                                  00005641         4   func ,g         1
+FILE=DefaultBuild\r_cg_timer.obj
+                                  00005645  00005834       1f0
+  _R_TAU0_Create
+                                  00005645       150   func ,g         1
+  _R_TAU0_Channel0_Start
+                                  00005795        10   func ,g         0
+  _R_TAU0_Channel0_Stop
+                                  000057a5        10   func ,g         0
+  _R_TAU0_Channel1_Start
+                                  000057b5        10   func ,g         1
+  _R_TAU0_Channel1_Stop
+                                  000057c5        10   func ,g         1
+  _R_TAU0_Channel2_Start
+                                  000057d5        10   func ,g         0
+  _R_TAU0_Channel2_Stop
+                                  000057e5        10   func ,g         0
+  _R_TAU0_Channel3_Start
+                                  000057f5        10   func ,g         0
+  _R_TAU0_Channel3_Stop
+                                  00005805        10   func ,g         0
+  _R_TAU0_Channel4_Start
+                                  00005815        10   func ,g         0
+  _R_TAU0_Channel4_Stop
+                                  00005825        10   func ,g         0
+FILE=DefaultBuild\r_cg_timer_user.obj
+                                  00005835  00005856        22
+  _r_tau0_channel0_interrupt
+                                  00005835         2   func ,g         1
+  _r_tau0_channel1_interrupt
+                                  00005837        1a   func ,g         1
+  _r_tau0_channel2_interrupt
+                                  00005851         2   func ,g         1
+  _r_tau0_channel3_interrupt
+                                  00005853         2   func ,g         1
+  _r_tau0_channel4_interrupt
+                                  00005855         2   func ,g         1
+FILE=DefaultBuild\r_cg_intc.obj
+                                  00005857  000058db        85
+  _R_INTC_Create
+                                  00005857        5b   func ,g         1
+  _R_INTC0_Start
+                                  000058b2         7   func ,g         0
+  _R_INTC0_Stop
+                                  000058b9         7   func ,g         0
+  _R_INTC2_Start
+                                  000058c0         7   func ,g         0
+  _R_INTC2_Stop
+                                  000058c7         7   func ,g         0
+  _R_INTC4_Start
+                                  000058ce         7   func ,g         0
+  _R_INTC4_Stop
+                                  000058d5         7   func ,g         0
+FILE=DefaultBuild\r_cg_intc_user.obj
+                                  000058dc  000058e1         6
+  _r_intc0_interrupt
+                                  000058dc         2   func ,g         1
+  _r_intc2_interrupt
+                                  000058de         2   func ,g         1
+  _r_intc4_interrupt
+                                  000058e0         2   func ,g         1
+
+SECTION=.constf
+FILE=_REL_print
+                                  000058e2  000058eb         a
+
+SECTION=.monitor2
+FILE=rlink_generates_03
+                                  0000fe00  0000ffff       200
+
+SECTION=.bss
+FILE=DefaultBuild\r_main.obj
+                                  000ff500  000ff608       109
+  _timer_tick_cb
+                                  000ff500         4   data ,g         0
+  _tmr_tick_cntr
+                                  000ff504         4   data ,g         a
+  _is_tmr_tick_using
+                                  000ff508         1   data ,g         2
+  _print_buf
+                                  000ff509       100   data ,g         2
+FILE=DefaultBuild\r_cg_serial.obj
+                                  000ff60a  000ff61d        14
+  _gp_uart1_tx_address
+                                  000ff60a         2   data ,g         4
+  _g_uart1_tx_count
+                                  000ff60c         2   data ,g         4
+  _gp_uart1_rx_address
+                                  000ff60e         2   data ,g         4
+  _g_uart1_rx_count
+                                  000ff610         2   data ,g         3
+  _g_uart1_rx_length
+                                  000ff612         2   data ,g         2
+  _gp_uart2_tx_address
+                                  000ff614         2   data ,g         4
+  _g_uart2_tx_count
+                                  000ff616         2   data ,g         4
+  _gp_uart2_rx_address
+                                  000ff618         2   data ,g         3
+  _g_uart2_rx_count
+                                  000ff61a         2   data ,g         4
+  _g_uart2_rx_length
+                                  000ff61c         2   data ,g         3
+FILE=DefaultBuild\bsp_dbg.obj
+                                  000ff61e  000ff61e         1
+  _bsp_dbg_is_tx_done
+                                  000ff61e         1   data ,g         3
+FILE=sprintf
+                                  000ff620  000ff623         4
+  __REL_pointer@1
+                                  000ff620         4   data ,l        10
+FILE=_REL_print
+                                  000ff624  000ff6a3        80
+  _qt@1@_REL_inmod@1
+                                  000ff624        80   data ,l         3
+
+Absolute value symbols
+FILE=rlink_generates_05
+  __s.text
+                                  000022bd         0   none ,g         0
+  __e.text
+                                  0000230c         0   none ,g         0
+  __s.textf
+                                  0000519c         0   none ,g         0
+  __e.textf
+                                  000058e2         0   none ,g         0
+  __s.const
+                                  00002200         0   none ,g         0
+  __e.const
+                                  000022bd         0   none ,g         0
+  __s.constf
+                                  000058e2         0   none ,g         0
+  __e.constf
+                                  000058ec         0   none ,g         0
+  __s.data
+                                  000058ec         0   none ,g         0
+  __e.data
+                                  000058ec         0   none ,g         0
+  __s.sdata
+                                  000058ec         0   none ,g         0
+  __e.sdata
+                                  000058ec         0   none ,g         0
+  __s.bss
+                                  000ff500         0   none ,g         0
+  __e.bss
+                                  000ff6a4         0   none ,g         0
+  __s.sbss
+                                  000ffe80         0   none ,g         0
+  __e.sbss
+                                  000ffe80         0   none ,g         0
+  __s.dataR
+                                  000ff500         0   none ,g         0
+  __e.dataR
+                                  000ff500         0   none ,g         0
+  __s.sdataR
+                                  000ffe80         0   none ,g         0
+  __e.sdataR
+                                  000ffe80         0   none ,g         0
+  __s.RLIB
+                                  0000230c         0   none ,g         0
+  __e.RLIB
+                                  00002eff         0   none ,g         0
+  __s.SLIB
+                                  00002eff         0   none ,g         0
+  __e.SLIB
+                                  0000519c         0   none ,g         0
+  __s.jtext_AT2000
+                                  00002000         0   none ,g         0
+  __e.jtext_AT2000
+                                  000020cc         0   none ,g         0
+  __s.vect
+                                  00000000         0   none ,g         0
+  __e.vect
+                                  00000080         0   none ,g         0
+  __s.option_byte
+                                  000000c0         0   none ,g         0
+  __e.option_byte
+                                  000000c4         0   none ,g         0
+  __s.monitor1
+                                  000000ce         0   none ,g         0
+  __e.monitor1
+                                  000000d8         0   none ,g         0
+  __s.monitor2
+                                  0000fe00         0   none ,g         0
+  __e.monitor2
+                                  00010000         0   none ,g         0
+  __s.security_id
+                                  000000c4         0   none ,g         0
+  __e.security_id
+                                  000000ce         0   none ,g         0
+  __RAM_ADDR_START
+                                  000fef00         0   none ,g         0
+  __RAM_ADDR_END
+                                  000ffee0         0   none ,g         0
+  __STACK_ADDR_START
+                                  000ffe20         0   none ,g         0
+  __STACK_ADDR_END
+                                  000ff6a4         0   none ,g         0
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Variable Vector Table List ***
+
+ADDRESS  SYMBOL/ADDRESS
+00       _start
+02       ffff
+04       
+06       
+08       
+0a       
+0c       
+0e       
+10       
+12       
+14       
+16       
+18       
+1a       
+1c       
+1e       
+20       
+22       
+24       
+26       
+28       
+2a       
+2c       
+2e       
+30       
+32       
+34       
+36       
+38       
+3a       
+3c       
+3e       
+40       
+42       
+44       
+46       
+48       
+4a       
+4c       
+4e       
+50       
+52       
+54       
+56       
+58       
+5a       
+5c       
+5e       
+60       
+62       
+64       
+66       
+68       
+6a       
+6c       
+6e       
+70       
+72       
+74       
+76       
+78       
+7a       
+7c       
+7e       
+
+*** Cross Reference List ***
+
+No   Unit Name   Global.Symbol   Location External Infomation
+---- ----------- --------------- -------- ---------------------
+0001 cstart
+     SECTION=.text
+                 _start
+                                 000022bd 0016(00002001:.jtext_AT2000)
+                 _exit
+                                 0000230a 0001(0000230b:.text)
+     SECTION=.textf
+     SECTION=.const
+     SECTION=.constf
+     SECTION=.data
+     SECTION=.sdata
+     SECTION=.bss
+     SECTION=.sbss
+     SECTION=.dataR
+     SECTION=.sdataR
+     SECTION=.RLIB
+     SECTION=.SLIB
+     SECTION=.dataR
+     SECTION=.sdataR
+0002 stkinit
+     SECTION=.textf
+                 _stkinit
+                                 0000519c
+0003 r_main
+     SECTION=.textf
+                 _main
+                                 000051e0 0001(00002306:.text)
+                 _R_MAIN_UserInit
+                                 00005204
+                 _post
+                                 00005208 0003(000051e4:.textf)
+                 _timer_tick_int_cb
+                                 0000524d 0013(00005842:.textf)
+                 _timer_tick_start
+                                 00005261 0003(0000528e:.textf)
+                 _timer_tick_stop
+                                 00005270 0003(000052a2:.textf)
+                 _delay
+                                 00005278
+                 _is_timer_tick_expired
+                                 000052a3
+     SECTION=.bss
+                 _timer_tick_cb
+                                 000ff500
+                 _tmr_tick_cntr
+                                 000ff504 0003(0000524f:.textf)
+                                          0003(00005257:.textf)
+                                          0003(0000525a:.textf)
+                                          0003(0000525e:.textf)
+                                          0003(00005267:.textf)
+                                          0003(0000526a:.textf)
+                                          0003(00005293:.textf)
+                                          0003(0000529a:.textf)
+                                          0003(000052b4:.textf)
+                                          0003(000052ba:.textf)
+                 _is_tmr_tick_using
+                                 000ff508 0003(0000526d:.textf)
+                                          0003(00005275:.textf)
+                 _print_buf
+                                 000ff509 0003(00005217:.textf)
+                                          0003(0000522a:.textf)
+     SECTION=.const
+0004 r_systeminit
+     SECTION=.textf
+                 _R_Systeminit
+                                 000052c1 0004(000052e8:.textf)
+                 _hdwinit
+                                 000052e4 0001(000022be:.text)
+0005 r_cg_cgc
+     SECTION=.textf
+                 _R_CGC_Create
+                                 000052e9 0004(000052c9:.textf)
+0006 r_cg_cgc_user
+     SECTION=.textf
+                 _R_CGC_Get_ResetSource
+                                 000052fa 0004(000052c5:.textf)
+0007 r_cg_port
+     SECTION=.textf
+                 _R_PORT_Create
+                                 000052fd 0004(000052cd:.textf)
+0008 r_cg_port_user
+0009 r_cg_serial
+     SECTION=.textf
+                 _R_SAU0_Create
+                                 0000531d 0004(000052d1:.textf)
+                 _R_UART1_Create
+                                 0000532c 0009(0000532b:.textf)
+                 _R_UART1_Start
+                                 000053c4 0003(0000520c:.textf)
+                 _R_UART1_Stop
+                                 000053f2
+                 _R_UART1_Receive
+                                 00005417
+                 _R_UART1_Send
+                                 0000542f 0011(00005631:.textf)
+                 _R_SAU1_Create
+                                 00005455 0004(000052d5:.textf)
+                 _R_UART2_Create
+                                 00005464 0009(00005463:.textf)
+                 _R_UART2_Start
+                                 000054e8
+                 _R_UART2_Stop
+                                 00005512
+                 _R_UART2_Receive
+                                 00005533
+                 _R_UART2_Send
+                                 0000554b
+     SECTION=.bss
+                 _gp_uart1_tx_address
+                                 000ff60a 0009(0000543b:.textf)
+                                          0009(0000544c:.textf)
+                                          0010(000055c9:.textf)
+                                          0010(000055d1:.textf)
+                 _g_uart1_tx_count
+                                 000ff60c 0009(0000543f:.textf)
+                                          0009(0000544f:.textf)
+                                          0010(000055b2:.textf)
+                                          0010(000055d4:.textf)
+                 _gp_uart1_rx_address
+                                 000ff60e 0009(0000542b:.textf)
+                                          0010(00005581:.textf)
+                                          0010(00005586:.textf)
+                                          0010(00005593:.textf)
+                 _g_uart1_rx_count
+                                 000ff610 0009(00005423:.textf)
+                                          0010(0000557b:.textf)
+                                          0010(00005589:.textf)
+                 _g_uart1_rx_length
+                                 000ff612 0009(00005427:.textf)
+                                          0010(00005578:.textf)
+                 _gp_uart2_tx_address
+                                 000ff614 0009(00005557:.textf)
+                                          0009(00005568:.textf)
+                                          0010(00005616:.textf)
+                                          0010(0000561e:.textf)
+                 _g_uart2_tx_count
+                                 000ff616 0009(0000555b:.textf)
+                                          0009(0000556b:.textf)
+                                          0010(0000560b:.textf)
+                                          0010(00005621:.textf)
+                 _gp_uart2_rx_address
+                                 000ff618 0009(00005547:.textf)
+                                          0010(000055f3:.textf)
+                                          0010(000055f8:.textf)
+                 _g_uart2_rx_count
+                                 000ff61a 0009(0000553f:.textf)
+                                          0010(000055ed:.textf)
+                                          0010(000055fb:.textf)
+                                          0010(00005601:.textf)
+                 _g_uart2_rx_length
+                                 000ff61c 0009(00005543:.textf)
+                                          0010(000055ea:.textf)
+                                          0010(000055fe:.textf)
+0010 r_cg_serial_user
+     SECTION=.textf
+                 _r_uart1_interrupt_receive
+                                 00005571 0016(0000204d:.jtext_AT2000)
+                 _r_uart1_interrupt_error
+                                 00005590 0016(00002051:.jtext_AT2000)
+                 _r_uart1_interrupt_send
+                                 000055a7 0016(00002049:.jtext_AT2000)
+                 _r_uart2_interrupt_receive
+                                 000055d8 0016(0000202d:.jtext_AT2000)
+                 _r_uart2_interrupt_send
+                                 00005608 0016(00002029:.jtext_AT2000)
+0011 bsp_dbg
+     SECTION=.textf
+                 _bsp_dbg_print
+                                 00005625 0003(000051ea:.textf)
+                                          0003(000051f1:.textf)
+                                          0003(000051f8:.textf)
+                                          0003(000051ff:.textf)
+                                          0003(00005226:.textf)
+                                          0003(0000522d:.textf)
+                                          0003(00005234:.textf)
+                                          0003(0000523b:.textf)
+                                          0003(00005242:.textf)
+                                          0003(00005249:.textf)
+                 _bsp_dbg_tx_done_set
+                                 00005641 0010(000055b9:.textf)
+     SECTION=.bss
+                 _bsp_dbg_is_tx_done
+                                 000ff61e 0011(00005627:.textf)
+                                          0011(0000563a:.textf)
+                                          0011(00005642:.textf)
+0012 r_cg_timer
+     SECTION=.textf
+                 _R_TAU0_Create
+                                 00005645 0004(000052d9:.textf)
+                 _R_TAU0_Channel0_Start
+                                 00005795
+                 _R_TAU0_Channel0_Stop
+                                 000057a5
+                 _R_TAU0_Channel1_Start
+                                 000057b5 0003(00005262:.textf)
+                 _R_TAU0_Channel1_Stop
+                                 000057c5 0003(00005271:.textf)
+                 _R_TAU0_Channel2_Start
+                                 000057d5
+                 _R_TAU0_Channel2_Stop
+                                 000057e5
+                 _R_TAU0_Channel3_Start
+                                 000057f5
+                 _R_TAU0_Channel3_Stop
+                                 00005805
+                 _R_TAU0_Channel4_Start
+                                 00005815
+                 _R_TAU0_Channel4_Stop
+                                 00005825
+0013 r_cg_timer_user
+     SECTION=.textf
+                 _r_tau0_channel0_interrupt
+                                 00005835 0016(00002059:.jtext_AT2000)
+                 _r_tau0_channel1_interrupt
+                                 00005837 0016(0000205d:.jtext_AT2000)
+                 _r_tau0_channel2_interrupt
+                                 00005851 0016(00002061:.jtext_AT2000)
+                 _r_tau0_channel3_interrupt
+                                 00005853 0016(00002065:.jtext_AT2000)
+                 _r_tau0_channel4_interrupt
+                                 00005855 0016(00002085:.jtext_AT2000)
+0014 r_cg_intc
+     SECTION=.textf
+                 _R_INTC_Create
+                                 00005857 0004(000052dd:.textf)
+                 _R_INTC0_Start
+                                 000058b2
+                 _R_INTC0_Stop
+                                 000058b9
+                 _R_INTC2_Start
+                                 000058c0
+                 _R_INTC2_Stop
+                                 000058c7
+                 _R_INTC4_Start
+                                 000058ce
+                 _R_INTC4_Stop
+                                 000058d5
+0015 r_cg_intc_user
+     SECTION=.textf
+                 _r_intc0_interrupt
+                                 000058dc 0016(00002011:.jtext_AT2000)
+                 _r_intc2_interrupt
+                                 000058de 0016(00002019:.jtext_AT2000)
+                 _r_intc4_interrupt
+                                 000058e0 0016(00002021:.jtext_AT2000)
+0016 ftable
+     SECTION=.jtext_AT2000
+0017 sprintf
+     SECTION=.SLIB
+                 _sprintf
+                                 00002eff 0003(0000521d:.textf)
+     SECTION=.bss
+0018 strlen
+     SECTION=.SLIB
+                 _strlen
+                                 00002fea 0011(0000562a:.textf)
+0019 _COM_uldiv
+     SECTION=.RLIB
+                 __COM_uldiv
+                                 0000230c 0003(00005283:.textf)
+                                          0003(000052ac:.textf)
+                                          0020(00003597:.SLIB)
+     SECTION=.text
+0020 _REL_print
+     SECTION=.SLIB
+                 __REL_print
+                                 00002ff6 0017(00002f87:.SLIB)
+     SECTION=.constf
+     SECTION=.bss
+0021 isdigit
+     SECTION=.SLIB
+                 _isdigit
+                                 00005190 0020(00003062:.SLIB)
+                                          0020(00003078:.SLIB)
+                                          0020(00003117:.SLIB)
+0022 _COM_fdiv
+     SECTION=.RLIB
+                 __COM_fdiv
+                                 0000236f 0020(00003b08:.SLIB)
+                                          0020(000041fa:.SLIB)
+     SECTION=.text
+0023 _COM_feq
+     SECTION=.RLIB
+                 __COM_feq
+                                 000024f7 0020(00003a48:.SLIB)
+                                          0027(0000265d:.RLIB)
+     SECTION=.text
+0024 _COM_fge
+     SECTION=.RLIB
+                 __COM_fge
+                                 0000250d 0020(00003a86:.SLIB)
+                                          0020(00004233:.SLIB)
+     SECTION=.text
+0025 _COM_flt
+     SECTION=.RLIB
+                 __COM_flt
+                                 00002523 0020(00003a5c:.SLIB)
+                                          0020(00003ae6:.SLIB)
+                                          0020(000041a6:.SLIB)
+                                          0020(000041d5:.SLIB)
+     SECTION=.text
+0026 _COM_fmul
+     SECTION=.RLIB
+                 __COM_fmul
+                                 00002577 0020(00003aa8:.SLIB)
+                                          0020(00003dba:.SLIB)
+                                          0020(00004258:.SLIB)
+     SECTION=.text
+0027 _COM_fne
+     SECTION=.RLIB
+                 __COM_fne
+                                 00002654 0020(00003bb1:.SLIB)
+                                          0020(00003d3e:.SLIB)
+                                          0020(0000418f:.SLIB)
+     SECTION=.text
+0028 _COM_ftosl
+     SECTION=.RLIB
+                 __COM_ftosl
+                                 00002665 0020(00003dd9:.SLIB)
+     SECTION=.text
+0029 _COM_funordered
+     SECTION=.RLIB
+                 __COM_funordered
+                                 0000266d 0020(00003a73:.SLIB)
+                                          0020(00003ad3:.SLIB)
+                                          0020(000041c2:.SLIB)
+                                          0020(00004220:.SLIB)
+     SECTION=.text
+0030 _COM_sidiv
+     SECTION=.RLIB
+                 __COM_sidiv
+                                 00002678 0020(00004345:.SLIB)
+                                          0020(00004eb4:.SLIB)
+     SECTION=.text
+0031 _COM_sirem
+     SECTION=.RLIB
+                 __COM_sirem
+                                 0000269e 0020(0000433a:.SLIB)
+     SECTION=.text
+0032 _COM_uidiv
+     SECTION=.RLIB
+                 __COM_uidiv
+                                 000026c0 0020(00003cc0:.SLIB)
+                                          0020(00003eb1:.SLIB)
+                                          0020(00003ee9:.SLIB)
+                                          0030(00002693:.RLIB)
+     SECTION=.text
+0033 _COM_uirem
+     SECTION=.RLIB
+                 __COM_uirem
+                                 000026eb 0020(00003cb5:.SLIB)
+                                          0020(00003e9d:.SLIB)
+                                          0020(00003ede:.SLIB)
+                                          0031(000026b5:.RLIB)
+     SECTION=.text
+0034 _COM_ulldiv
+     SECTION=.RLIB
+                 __COM_ulldiv
+                                 00002716 0020(000034eb:.SLIB)
+     SECTION=.text
+0035 _COM_ullrem
+     SECTION=.RLIB
+                 __COM_ullrem
+                                 00002740 0020(000034c1:.SLIB)
+     SECTION=.text
+0036 _COM_ulrem
+     SECTION=.RLIB
+                 __COM_ulrem
+                                 00002771 0020(00003584:.SLIB)
+     SECTION=.text
+0037 _COM_mulul
+     SECTION=.RLIB
+                 __COM_mulul
+                                 000027ab 0026(0000260f:.RLIB)
+     SECTION=.text
+0038 _REL_fcmp
+     SECTION=.RLIB
+                 __REL_fcmp
+                                 00002808 0023(00002501:.RLIB)
+                                          0024(00002517:.RLIB)
+                                          0025(0000252d:.RLIB)
+     SECTION=.text
+0039 _REL_fordered_core
+     SECTION=.RLIB
+                 __REL_fordered_core
+                                 00002840 0023(000024fa:.RLIB)
+                                          0024(00002510:.RLIB)
+                                          0025(00002526:.RLIB)
+                                          0029(00002670:.RLIB)
+     SECTION=.text
+0040 _REL_ftol
+     SECTION=.RLIB
+                 __REL_ftol
+                                 0000285c 0028(00002666:.RLIB)
+     SECTION=.text
+0041 _REL_f_check
+     SECTION=.RLIB
+                 __REL_f_check
+                                 00002891 0022(00002370:.RLIB)
+                                          0026(00002578:.RLIB)
+0042 _REL_f_ieee754
+     SECTION=.RLIB
+                 __REL_f_ieee754
+                                 000028c4 0022(000024f4:.RLIB)
+                                          0026(00002651:.RLIB)
+     SECTION=.text
+0043 _REL_f_inf
+     SECTION=.RLIB
+                 __REL_f_inf
+                                 000028d4 0022(0000235f:.RLIB)
+                                          0022(000023de:.RLIB)
+                                          0022(000024db:.RLIB)
+                                          0026(0000254f:.RLIB)
+                                          0026(00002563:.RLIB)
+                                          0026(00002574:.RLIB)
+                                          0026(00002606:.RLIB)
+                                          0026(0000262d:.RLIB)
+     SECTION=.text
+0044 _REL_f_round
+     SECTION=.RLIB
+                 __REL_f_round
+                                 000028de 0022(000024f0:.RLIB)
+                                          0026(0000264d:.RLIB)
+     SECTION=.text
+0045 _REL_lldiv
+     SECTION=.RLIB
+                 __REL_lldiv
+                                 00002932 0034(0000273d:.RLIB)
+     SECTION=.text
+0046 _REL_llrem
+     SECTION=.RLIB
+                 __REL_llrem
+                                 00002c0f 0035(0000276e:.RLIB)
+     SECTION=.text
+0047 _REL_ltosl
+     SECTION=.RLIB
+                 __REL_ltosl
+                                 00002eaf 0028(0000266a:.RLIB)
+     SECTION=.text
+0048 _COM_lshr
+     SECTION=.RLIB
+                 __COM_lshr
+                                 00002ed4 0040(00002888:.RLIB)
+     SECTION=.text
+0049 _COM_mului
+     SECTION=.RLIB
+                 __COM_mului
+                                 00002ee9 0037(000027b1:.RLIB)
+                                          0037(000027c0:.RLIB)
+                                          0037(000027d6:.RLIB)
+                                          0037(000027f3:.RLIB)
+     SECTION=.text
+0050 rlink_generates_01
+     SECTION=.vect
+0051 rlink_generates_02
+     SECTION=.option_byte
+0052 rlink_generates_03
+     SECTION=.monitor1
+     SECTION=.monitor2
+0053 rlink_generates_04
+     SECTION=.security_id
+0054 rlink_generates_05
+     SECTION=
+                 __s.vect
+                                 00000000
+                 __e.vect
+                                 00000080
+                 __s.option_byte
+                                 000000c0
+                 __e.option_byte
+                                 000000c4
+                 __s.security_id
+                                 000000c4
+                 __s.monitor1
+                                 000000ce
+                 __e.security_id
+                                 000000ce
+                 __e.monitor1
+                                 000000d8
+                 __s.jtext_AT2000
+                                 00002000
+                 __e.jtext_AT2000
+                                 000020cc
+                 __s.const
+                                 00002200
+                 __s.text
+                                 000022bd
+                 __e.const
+                                 000022bd
+                 __e.text
+                                 0000230c
+                 __s.RLIB
+                                 0000230c
+                 __e.RLIB
+                                 00002eff
+                 __s.SLIB
+                                 00002eff
+                 __s.textf
+                                 0000519c
+                 __e.SLIB
+                                 0000519c
+                 __e.textf
+                                 000058e2
+                 __s.constf
+                                 000058e2
+                 __e.constf
+                                 000058ec
+                 __s.data
+                                 000058ec
+                 __e.data
+                                 000058ec
+                 __s.sdata
+                                 000058ec
+                 __e.sdata
+                                 000058ec
+                 __s.monitor2
+                                 0000fe00
+                 __e.monitor2
+                                 00010000
+                 __RAM_ADDR_START
+                                 000fef00
+                 __s.bss
+                                 000ff500
+                 __s.dataR
+                                 000ff500
+                 __e.dataR
+                                 000ff500
+                 __e.bss
+                                 000ff6a4
+                 __STACK_ADDR_END
+                                 000ff6a4
+                 __STACK_ADDR_START
+                                 000ffe20
+                 __s.sbss
+                                 000ffe80
+                 __e.sbss
+                                 000ffe80
+                 __s.sdataR
+                                 000ffe80
+                 __e.sdataR
+                                 000ffe80
+                 __RAM_ADDR_END
+                                 000ffee0

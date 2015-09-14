@@ -1,0 +1,930 @@
+Renesas Optimizing Linker (W2.03.00 )             13-Sep-2015 23:01:08
+
+*** Options ***
+
+-subcommand=DefaultBuild\sensor_tag_bl.clnk
+-Input=DefaultBuild\cstart.obj
+-Input=DefaultBuild\stkinit.obj
+-Input=DefaultBuild\r_systeminit.obj
+-Input=DefaultBuild\r_cg_cgc.obj
+-Input=DefaultBuild\r_cg_cgc_user.obj
+-Input=DefaultBuild\r_cg_port.obj
+-Input=DefaultBuild\r_cg_port_user.obj
+-Input=DefaultBuild\r_cg_serial.obj
+-Input=DefaultBuild\r_cg_serial_user.obj
+-Input=DefaultBuild\r_cg_timer.obj
+-Input=DefaultBuild\r_cg_timer_user.obj
+-Input=DefaultBuild\bsp_di.obj
+-Input=DefaultBuild\r_xmodem.obj
+-Input=DefaultBuild\extern_ftable.obj
+-Input=DefaultBuild\r_main.obj
+-Input=DefaultBuild\hdwinit.obj
+-LIBrary="FSLRL78 Type01\V2.21\librl78\fsl.lib"
+-SECURITY_ID=00000000000000000000
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F100BE.DVF
+-DEBug
+-NOCOmpress
+-NOOPtimize
+-OUtput=DefaultBuild\sensor_tag_bl.abs
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.01.00\lib\rl78cm4s.lib
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.01.00\lib\rl78cm4r.lib
+-OCDBG=84
+-DEBUG_MONITOR=FE00-FFFF
+-USER_OPT_BYTE=EFFFAA
+-SELF
+-PADDING
+-VECTN=2=ffff
+-VECTN=4=2008
+-VECTN=6=200C
+-VECTN=8=2010
+-VECTN=A=2014
+-VECTN=C=2018
+-VECTN=E=201C
+-VECTN=10=2020
+-VECTN=12=2024
+-VECTN=14=2028
+-VECTN=16=202C
+-VECTN=18=2030
+-VECTN=1A=2034
+-VECTN=1C=2038
+-VECTN=1E=203C
+-VECTN=20=2040
+-VECTN=22=2044
+-VECTN=24=2048
+-VECTN=26=204C
+-VECTN=28=2050
+-VECTN=2A=2054
+-VECTN=2C=2058
+-VECTN=2E=205C
+-VECTN=30=2060
+-VECTN=32=2064
+-VECTN=34=2068
+-VECTN=36=206C
+-VECTN=38=2070
+-VECTN=3A=2074
+-VECTN=3C=2078
+-VECTN=3E=207C
+-VECTN=40=2080
+-VECTN=42=2084
+-VECTN=44=2088
+-VECTN=46=208C
+-VECTN=48=2090
+-VECTN=4A=2094
+-VECTN=4C=2098
+-VECTN=4E=209C
+-VECTN=50=20A0
+-VECTN=52=20A4
+-VECTN=54=20A8
+-VECTN=56=20AC
+-VECTN=58=20B0
+-VECTN=5A=20B4
+-VECTN=5C=20B8
+-VECTN=5E=20BC
+-VECTN=60=20C0
+-VECTN=62=20C4
+-VECTN=7E=20C8
+-LISt
+-SHow=ALL
+-STARt=.btext,.btextf,.text,.RLIB,.SLIB,.textf,.constf,.data,.sdata,FSL_BCD,FSL_FCD,FSL_RCD,FSL_BECD/000D8,.dataR,.stack_bss,.bss/FF300,.sdataR,.sbss/FFE20
+-FSymbol=.constf
+-FSymbol=.text
+-FSymbol=.textf
+-FSymbol=.bss
+-FSymbol=.sbss
+-FSymbol=.data
+-FSymbol=.sdata
+-FSymbol=.RLIB
+-FSymbol=.SLIB
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-NOMessage
+-NOLOgo
+-end
+
+*** Error information ***
+
+W0561184:Interrupt number "0x2" of ".vect" is defined
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+.vect
+                                  00000000  0000007f        80   0
+.option_byte
+                                  000000c0  000000c3         4   1
+.security_id
+                                  000000c4  000000cd         a   1
+.monitor1
+                                  000000ce  000000d7         a   1
+.btext
+                                  000000d8  0000012e        57   1
+.btextf
+                                  0000012f  00000177        49   1
+.text
+                                  00000178  00000178         0   1
+.RLIB
+                                  00000178  00000178         0   1
+.SLIB
+                                  00000178  00000178         0   1
+.textf
+                                  00000178  000007f9       682   1
+.constf
+                                  000007fa  00000a31       238   2
+.data
+                                  00000a32  00000a32         0   2
+.sdata
+                                  00000a32  00000a32         0   2
+FSL_BCD
+                                  00000a32  00000b31       100   2
+FSL_FCD
+                                  00000b32  00000be3        b2   2
+FSL_RCD
+                                  00000be4  00000c43        60   2
+FSL_BECD
+                                  00000c44  00000cc3        80   2
+.monitor2
+                                  0000fe00  0000ffff       200   1
+.dataR
+                                  000ff300  000ff300         0   2
+.stack_bss
+                                  000ff300  000ff4ff       200   2
+.bss
+                                  000ff500  000ff500         0   2
+.sdataR
+                                  000ffe20  000ffe20         0   2
+.sbss
+                                  000ffe20  000ffe20         0   2
+
+*** Total Section Size ***
+
+RAMDATA SECTION:  00000200 Byte(s)
+ROMDATA SECTION:  000004d0 Byte(s)
+PROGRAM SECTION:  000009b4 Byte(s)
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+    STRUCT                                      SIZE
+      MEMBER                        ADDR        SIZE    INFO
+
+SECTION=.vect
+FILE=rlink_generates_01
+                                  00000000  0000007f        80
+
+SECTION=.option_byte
+FILE=rlink_generates_02
+                                  000000c0  000000c3         4
+
+SECTION=.security_id
+FILE=rlink_generates_04
+                                  000000c4  000000cd         a
+
+SECTION=.monitor1
+FILE=rlink_generates_03
+                                  000000ce  000000d7         a
+
+SECTION=.btext
+FILE=DefaultBuild\cstart.obj
+                                  000000d8  0000012e        57
+  _start
+                                  000000d8         0   none ,g         0
+  _exit
+                                  0000012d         0   none ,g         1
+
+SECTION=.btextf
+FILE=DefaultBuild\stkinit.obj
+                                  0000012f  00000172        44
+  _stkinit
+                                  0000012f         0   none ,g         0
+  LSTINIT1
+                                  0000013d         0   none ,l         1
+  LSTINIT2
+                                  00000167         0   none ,l         2
+  LSTINIT3
+                                  00000172         0   none ,l         2
+FILE=DefaultBuild\hdwinit.obj
+                                  00000173  00000177         5
+  _hdwinit
+                                  00000173         0   none ,g         1
+
+SECTION=.textf
+FILE=DefaultBuild\r_systeminit.obj
+                                  00000178  00000197        20
+  _R_Systeminit
+                                  00000178        1b   func ,g         1
+  _hdwinit_boot
+                                  00000193         5   func ,g         1
+FILE=DefaultBuild\r_cg_cgc.obj
+                                  00000198  000001a8        11
+  _R_CGC_Create
+                                  00000198        11   func ,g         1
+FILE=DefaultBuild\r_cg_cgc_user.obj
+                                  000001a9  000001ab         3
+  _R_CGC_Get_ResetSource
+                                  000001a9         3   func ,g         1
+FILE=DefaultBuild\r_cg_port.obj
+                                  000001ac  000001ec        41
+  _R_PORT_Create
+                                  000001ac        41   func ,g         1
+FILE=DefaultBuild\r_cg_serial.obj
+                                  000001ed  0000033d       151
+  _R_SAU0_Create
+                                  000001ed         f   func ,g         1
+  _R_UART1_Create
+                                  000001fc        90   func ,g         1
+  _R_UART1_Start
+                                  0000028c        2a   func ,g         1
+  _R_UART1_Stop
+                                  000002b6        21   func ,g         0
+  _R_UART1_Send_Byte
+                                  000002d7        34   func ,g         7
+  _R_UART1_Send_String
+                                  0000030b        33   func ,g         e
+FILE=DefaultBuild\r_cg_timer.obj
+                                  0000033e  000003fc        bf
+  _R_TAU0_Create
+                                  0000033e        7d   func ,g         1
+  _R_TAU0_Channel0_Start
+                                  000003bb         a   func ,g         3
+  _R_TAU0_Channel0_Stop
+                                  000003c5         a   func ,g         2
+  _delay
+                                  000003cf        2e   func ,g         1
+FILE=DefaultBuild\bsp_di.obj
+                                  000003fd  00000405         9
+  _bsp_di_is_hi
+                                  000003fd         9   func ,g         1
+FILE=DefaultBuild\r_xmodem.obj
+                                  00000406  00000667       262
+  _WriteFlash
+                                  00000406        19   func ,g         2
+  _GetByte
+                                  0000041f        6a   func ,g         3
+  _XmodemProg
+                                  00000489       1df   func ,g         2
+FILE=DefaultBuild\r_main.obj
+                                  00000668  000007f9       192
+  _main
+                                  00000668       15f   func ,g         1
+  _R_MAIN_UserInit
+                                  000007c7         4   func ,g         0
+  _ErrorHandler
+                                  000007cb        2f   func ,g         4
+
+SECTION=.constf
+FILE=DefaultBuild\r_main.obj
+                                  000007fa  00000a31       238
+
+SECTION=FSL_BCD
+FILE=fsl_b_common
+                                  00000a32  00000b31       100
+  _ASM_BCD_Start
+                                  00000a32         0   none ,g         7
+  _ASM_BCD_Entry
+                                  00000a32         0   none ,l         0
+  _ASM_BCD_StatusCheck
+                                  00000a43         0   none ,l         1
+  _ASM_BCD_Erase
+                                  00000a63         0   none ,l         1
+  _ASM_BCD_IVerify
+                                  00000a67         0   none ,l         1
+  _ASM_BCD_BlankCheck
+                                  00000a6b         0   none ,l         1
+  _ASM_BCD_block_cmd
+                                  00000a6d         0   none ,l         2
+  _ASM_BCD_Param_Error
+                                  00000a91         0   none ,l         7
+  _ASM_BCD_Common_Exit
+                                  00000a93         0   none ,l         4
+  _ASM_BCD_Write
+                                  00000a9f         0   none ,l         1
+  _ASM_BCD_Write_cmd
+                                  00000aa2         0   none ,l         0
+  _ASM_BCD_Execute
+                                  00000af6         0   none ,l         1
+  _ASM_BCD_Execute_check
+                                  00000afb         0   none ,l         1
+  _ASM_BCD_Execute_retry
+                                  00000b16         0   none ,l         1
+  _ASM_BCD_Alignment_Start
+                                  00000b1c         0   none ,l         0
+  _ASM_BCD_Table_Start
+                                  00000b26         0   none ,l         0
+  _ASM_BCD_End
+                                  00000b32         0   none ,g         1
+
+SECTION=FSL_FCD
+FILE=fsl_f_open
+                                  00000b32  00000b36         5
+  _FSL_Open
+                                  00000b32         0   none ,g         1
+FILE=fsl_f_pfunc
+                                  00000b38  00000b60        29
+  _FSL_PrepareFunctions
+                                  00000b38         0   none ,g         1
+  _FSL_Prepare_common
+                                  00000b4e         0   none ,g         2
+FILE=fsl_f_pefunc
+                                  00000b62  00000b7a        19
+  _FSL_PrepareExtFunctions
+                                  00000b62         0   none ,g         1
+FILE=fsl_f_init
+                                  00000b7c  00000be3        68
+  _FSL_Init
+                                  00000b7c         0   none ,g         1
+  _FSL_Init_Clear_Info_loop
+                                  00000b87         0   none ,l         1
+  _FSL_Init_param_err
+                                  00000bd8         0   none ,l         3
+  _FSL_Init_exit
+                                  00000bda         0   none ,l         1
+
+SECTION=FSL_RCD
+FILE=fsl_r_reset
+                                  00000be4  00000be4         1
+  _FSL_ForceReset
+                                  00000be4         0   none ,g         2
+FILE=fsl_r_ss_ibf
+                                  00000be6  00000bed         8
+  _FSL_InvertBootFlag
+                                  00000be6         0   none ,g         1
+FILE=fsl_r_std_cmd
+                                  00000bee  00000c0c        1f
+  _FSL_BlankCheck
+                                  00000bee         0   none ,g         1
+  _FSL_Erase
+                                  00000bf3         0   none ,g         2
+  _FSL_IVerify
+                                  00000bf8         0   none ,g         0
+  _FSL_Write
+                                  00000bfd         0   none ,g         1
+  _FSL_std_common
+                                  00000c00         0   none ,l         3
+  _FSL_std_common_flow_err
+                                  00000c09         0   none ,l         0
+FILE=fsl_r_br_becd
+                                  00000c0e  00000c1a         d
+  _ASM_RCD_Branch_BECD_Entry
+                                  00000c0e         0   none ,g         1
+  _ASM_RCD_Branch_BECD_Entry_flow_err
+                                  00000c17         0   none ,l         0
+FILE=fsl_r_check_flow
+                                  00000c1c  00000c43        28
+  _ASM_RCD_Check_Ext_Flow
+                                  00000c1c         0   none ,g         1
+  _ASM_RCD_Check_Status_Flow
+                                  00000c23         0   none ,g         0
+  _ASM_RCD_Check_StandBy_Flow
+                                  00000c2a         0   none ,g         0
+  _ASM_RCD_Check_WakeUp_Flow
+                                  00000c31         0   none ,g         0
+  _ASM_RCD_Check_Flow
+                                  00000c38         0   none ,g         1
+  _ASM_RCD_Check_Flow_common
+                                  00000c3d         0   none ,l         4
+
+SECTION=FSL_BECD
+FILE=fsl_be_common
+                                  00000c44  00000cc3        80
+  _ASM_BECD_Start
+                                  00000c44         0   none ,g         4
+  _ASM_BECD_Entry
+                                  00000c44         0   none ,l         0
+  _ASM_BECD_SI_Security_Flags
+                                  00000c55         0   none ,l         1
+  _ASM_BECD_SI_Security_Flags_exit
+                                  00000c78         0   none ,l         1
+  _ASM_BECD_SI_Common_Exit
+                                  00000c7c         0   none ,l         2
+  _ASM_BECD_SI_FSW
+                                  00000c88         0   none ,l         1
+  _ASM_BECD_SI_Execute
+                                  00000c8a         0   none ,l         1
+  _ASM_BECD_SI_Execute_check
+                                  00000c8e         0   none ,l         1
+  _ASM_BECD_SI_Execute_check_cont
+                                  00000c9f         0   none ,l         1
+  _ASM_BECD_SI_Execute_retry
+                                  00000cae         0   none ,l         1
+  _ASM_BECD_Alignment_Start
+                                  00000cb4         0   none ,l         0
+  _ASM_BECD_Table_Start
+                                  00000cbc         0   none ,l         0
+  _ASM_BECD_End
+                                  00000cc4         0   none ,g         1
+
+SECTION=.monitor2
+FILE=rlink_generates_03
+                                  0000fe00  0000ffff       200
+
+SECTION=.stack_bss
+FILE=DefaultBuild\cstart.obj
+                                  000ff300  000ff4ff       200
+  _stackend
+                                  000ff300         0   none ,l         0
+  _stacktop
+                                  000ff500         0   none ,l         1
+
+Absolute value symbols
+FILE=DefaultBuild\extern_ftable.obj
+  _f1
+                                  00002100         0   none ,g         0
+  _f2
+                                  00002104         0   none ,g         0
+FILE=rlink_generates_05
+  __s.text
+                                  00000178         0   none ,g         0
+  __e.text
+                                  00000178         0   none ,g         0
+  __s.textf
+                                  00000178         0   none ,g         0
+  __e.textf
+                                  000007fa         0   none ,g         0
+  __s.constf
+                                  000007fa         0   none ,g         0
+  __e.constf
+                                  00000a32         0   none ,g         0
+  __s.data
+                                  00000a32         0   none ,g         0
+  __e.data
+                                  00000a32         0   none ,g         0
+  __s.sdata
+                                  00000a32         0   none ,g         0
+  __e.sdata
+                                  00000a32         0   none ,g         0
+  __s.bss
+                                  000ff500         0   none ,g         0
+  __e.bss
+                                  000ff500         0   none ,g         0
+  __s.sbss
+                                  000ffe20         0   none ,g         0
+  __e.sbss
+                                  000ffe20         0   none ,g         0
+  __s.dataR
+                                  000ff300         0   none ,g         0
+  __e.dataR
+                                  000ff300         0   none ,g         0
+  __s.sdataR
+                                  000ffe20         0   none ,g         0
+  __e.sdataR
+                                  000ffe20         0   none ,g         0
+  __s.stack_bss
+                                  000ff300         0   none ,g         0
+  __e.stack_bss
+                                  000ff500         0   none ,g         0
+  __s.btext
+                                  000000d8         0   none ,g         0
+  __e.btext
+                                  0000012f         0   none ,g         0
+  __s.RLIB
+                                  00000178         0   none ,g         0
+  __e.RLIB
+                                  00000178         0   none ,g         0
+  __s.SLIB
+                                  00000178         0   none ,g         0
+  __e.SLIB
+                                  00000178         0   none ,g         0
+  __s.btextf
+                                  0000012f         0   none ,g         0
+  __e.btextf
+                                  00000178         0   none ,g         0
+  __sFSL_FCD
+                                  00000b32         0   none ,g         0
+  __eFSL_FCD
+                                  00000be4         0   none ,g         0
+  __sFSL_RCD
+                                  00000be4         0   none ,g         0
+  __eFSL_RCD
+                                  00000c44         0   none ,g         0
+  __sFSL_BCD
+                                  00000a32         0   none ,g         0
+  __eFSL_BCD
+                                  00000b32         0   none ,g         0
+  __sFSL_BECD
+                                  00000c44         0   none ,g         0
+  __eFSL_BECD
+                                  00000cc4         0   none ,g         0
+  __s.vect
+                                  00000000         0   none ,g         0
+  __e.vect
+                                  00000080         0   none ,g         0
+  __s.option_byte
+                                  000000c0         0   none ,g         0
+  __e.option_byte
+                                  000000c4         0   none ,g         0
+  __s.monitor1
+                                  000000ce         0   none ,g         0
+  __e.monitor1
+                                  000000d8         0   none ,g         0
+  __s.monitor2
+                                  0000fe00         0   none ,g         0
+  __e.monitor2
+                                  00010000         0   none ,g         0
+  __s.security_id
+                                  000000c4         0   none ,g         0
+  __e.security_id
+                                  000000ce         0   none ,g         0
+  __RAM_ADDR_START
+                                  000fef00         0   none ,g         0
+  __RAM_ADDR_END
+                                  000ffee0         0   none ,g         0
+  __STACK_ADDR_START
+                                  000ffe20         0   none ,g         0
+  __STACK_ADDR_END
+                                  000ff502         0   none ,g         0
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Variable Vector Table List ***
+
+ADDRESS  SYMBOL/ADDRESS
+00       _start
+02       ffff
+04       2008
+06       200c
+08       2010
+0a       2014
+0c       2018
+0e       201c
+10       2020
+12       2024
+14       2028
+16       202c
+18       2030
+1a       2034
+1c       2038
+1e       203c
+20       2040
+22       2044
+24       2048
+26       204c
+28       2050
+2a       2054
+2c       2058
+2e       205c
+30       2060
+32       2064
+34       2068
+36       206c
+38       2070
+3a       2074
+3c       2078
+3e       207c
+40       2080
+42       2084
+44       2088
+46       208c
+48       2090
+4a       2094
+4c       2098
+4e       209c
+50       20a0
+52       20a4
+54       20a8
+56       20ac
+58       20b0
+5a       20b4
+5c       20b8
+5e       20bc
+60       20c0
+62       20c4
+64       
+66       
+68       
+6a       
+6c       
+6e       
+70       
+72       
+74       
+76       
+78       
+7a       
+7c       
+7e       20c8
+
+*** Cross Reference List ***
+
+No   Unit Name   Global.Symbol   Location External Infomation
+---- ----------- --------------- -------- ---------------------
+0001 cstart
+     SECTION=.btext
+                 _start
+                                 000000d8
+                 _exit
+                                 0000012d 0001(0000012e:.btext)
+     SECTION=.text
+     SECTION=.textf
+     SECTION=.constf
+     SECTION=.data
+     SECTION=.sdata
+     SECTION=.bss
+     SECTION=.sbss
+     SECTION=.dataR
+     SECTION=.sdataR
+     SECTION=.stack_bss
+     SECTION=.RLIB
+     SECTION=.SLIB
+     SECTION=.dataR
+     SECTION=.sdataR
+0002 stkinit
+     SECTION=.btextf
+                 _stkinit
+                                 0000012f
+0003 r_systeminit
+     SECTION=.textf
+                 _R_Systeminit
+                                 00000178 0003(00000197:.textf)
+                 _hdwinit_boot
+                                 00000193 0016(00000174:.btextf)
+0004 r_cg_cgc
+     SECTION=.textf
+                 _R_CGC_Create
+                                 00000198 0003(00000180:.textf)
+0005 r_cg_cgc_user
+     SECTION=.textf
+                 _R_CGC_Get_ResetSource
+                                 000001a9 0003(0000017c:.textf)
+0006 r_cg_port
+     SECTION=.textf
+                 _R_PORT_Create
+                                 000001ac 0003(00000184:.textf)
+0007 r_cg_port_user
+0008 r_cg_serial
+     SECTION=.textf
+                 _R_SAU0_Create
+                                 000001ed 0003(00000188:.textf)
+                 _R_UART1_Create
+                                 000001fc 0008(000001fb:.textf)
+                 _R_UART1_Start
+                                 0000028c 0015(00000679:.textf)
+                 _R_UART1_Stop
+                                 000002b6
+                 _R_UART1_Send_Byte
+                                 000002d7 0008(00000332:.textf)
+                                          0013(000004c1:.textf)
+                                          0013(0000059b:.textf)
+                                          0013(000005be:.textf)
+                                          0013(000005de:.textf)
+                                          0013(000005e4:.textf)
+                                          0013(000005f0:.textf)
+                 _R_UART1_Send_String
+                                 0000030b 0015(000006a9:.textf)
+                                          0015(000006b2:.textf)
+                                          0015(000006bb:.textf)
+                                          0015(000006c4:.textf)
+                                          0015(000006f5:.textf)
+                                          0015(00000708:.textf)
+                                          0015(00000720:.textf)
+                                          0015(0000075a:.textf)
+                                          0015(00000763:.textf)
+                                          0015(00000773:.textf)
+                                          0015(00000781:.textf)
+                                          0015(000007ae:.textf)
+                                          0015(000007bf:.textf)
+                                          0015(000007f2:.textf)
+0009 r_cg_serial_user
+0010 r_cg_timer
+     SECTION=.textf
+                 _R_TAU0_Create
+                                 0000033e 0003(0000018c:.textf)
+                 _R_TAU0_Channel0_Start
+                                 000003bb 0010(000003d2:.textf)
+                                          0013(00000423:.textf)
+                                          0013(00000452:.textf)
+                 _R_TAU0_Channel0_Stop
+                                 000003c5 0010(000003fc:.textf)
+                                          0013(00000441:.textf)
+                 _delay
+                                 000003cf 0015(00000710:.textf)
+0011 r_cg_timer_user
+0012 bsp_di
+     SECTION=.textf
+                 _bsp_di_is_hi
+                                 000003fd 0015(0000066f:.textf)
+0013 r_xmodem
+     SECTION=.textf
+                 _WriteFlash
+                                 00000406 0013(000005b6:.textf)
+                                          0013(00000652:.textf)
+                 _GetByte
+                                 0000041f 0013(000004cf:.textf)
+                                          0013(0000050e:.textf)
+                                          0015(000006d5:.textf)
+                 _XmodemProg
+                                 00000489 0015(00000742:.textf)
+                                          0015(000007a2:.textf)
+0014 extern_ftable
+     SECTION=
+                 _f1
+                                 00002100
+                 _f2
+                                 00002104
+0015 r_main
+     SECTION=.textf
+                 _main
+                                 00000668 0001(00000125:.btext)
+                 _R_MAIN_UserInit
+                                 000007c7
+                 _ErrorHandler
+                                 000007cb 0015(00000695:.textf)
+                                          0015(00000732:.textf)
+                                          0015(00000752:.textf)
+                                          0015(00000792:.textf)
+     SECTION=.constf
+0016 hdwinit
+     SECTION=.btextf
+                 _hdwinit
+                                 00000173 0001(000000dd:.btext)
+0017 fsl_f_open
+     SECTION=FSL_FCD
+                 _FSL_Open
+                                 00000b32 0015(00000698:.textf)
+0018 fsl_f_pfunc
+     SECTION=FSL_FCD
+                 _FSL_PrepareFunctions
+                                 00000b38 0015(0000069c:.textf)
+                 _FSL_Prepare_common
+                                 00000b4e 0018(00000b58:FSL_FCD)
+                                          0019(00000b79:FSL_FCD)
+0019 fsl_f_pefunc
+     SECTION=FSL_FCD
+                 _FSL_PrepareExtFunctions
+                                 00000b62 0015(000006a0:.textf)
+0020 fsl_f_init
+     SECTION=FSL_FCD
+                 _FSL_Init
+                                 00000b7c 0015(0000068c:.textf)
+0021 fsl_r_reset
+     SECTION=FSL_RCD
+                 _FSL_ForceReset
+                                 00000be4 0015(00000714:.textf)
+                                          0015(00000767:.textf)
+0022 fsl_r_ss_ibf
+     SECTION=FSL_RCD
+                 _FSL_InvertBootFlag
+                                 00000be6 0015(00000749:.textf)
+0023 fsl_r_std_cmd
+     SECTION=FSL_RCD
+                 _FSL_BlankCheck
+                                 00000bee 0015(000006fc:.textf)
+                 _FSL_Erase
+                                 00000bf3 0015(0000072a:.textf)
+                                          0015(0000078a:.textf)
+                 _FSL_IVerify
+                                 00000bf8
+                 _FSL_Write
+                                 00000bfd 0013(00000419:.textf)
+0024 fsl_b_common
+     SECTION=FSL_BCD
+                 _ASM_BCD_Start
+                                 00000a32 0018(00000b44:FSL_FCD)
+                                          0018(00000b46:FSL_FCD)
+                                          0024(00000b26:FSL_BCD)
+                                          0024(00000b28:FSL_BCD)
+                                          0024(00000b2a:FSL_BCD)
+                                          0024(00000b2c:FSL_BCD)
+                                          0024(00000b2e:FSL_BCD)
+                 _ASM_BCD_End
+                                 00000b32 0018(00000b49:FSL_FCD)
+0025 fsl_be_common
+     SECTION=FSL_BECD
+                 _ASM_BECD_Start
+                                 00000c44 0019(00000b6e:FSL_FCD)
+                                          0019(00000b70:FSL_FCD)
+                                          0025(00000cbc:FSL_BECD)
+                                          0025(00000cbe:FSL_BECD)
+                 _ASM_BECD_End
+                                 00000cc4 0019(00000b73:FSL_FCD)
+0026 fsl_r_br_becd
+     SECTION=FSL_RCD
+                 _ASM_RCD_Branch_BECD_Entry
+                                 00000c0e 0022(00000bec:FSL_RCD)
+0027 fsl_r_check_flow
+     SECTION=FSL_RCD
+                 _ASM_RCD_Check_Ext_Flow
+                                 00000c1c 0026(00000c0f:FSL_RCD)
+                 _ASM_RCD_Check_Status_Flow
+                                 00000c23
+                 _ASM_RCD_Check_StandBy_Flow
+                                 00000c2a
+                 _ASM_RCD_Check_WakeUp_Flow
+                                 00000c31
+                 _ASM_RCD_Check_Flow
+                                 00000c38 0023(00000c01:FSL_RCD)
+0028 rlink_generates_01
+     SECTION=.vect
+0029 rlink_generates_02
+     SECTION=.option_byte
+0030 rlink_generates_03
+     SECTION=.monitor1
+     SECTION=.monitor2
+0031 rlink_generates_04
+     SECTION=.security_id
+0032 rlink_generates_05
+     SECTION=
+                 __s.vect
+                                 00000000
+                 __e.vect
+                                 00000080
+                 __s.option_byte
+                                 000000c0
+                 __e.option_byte
+                                 000000c4
+                 __s.security_id
+                                 000000c4
+                 __s.monitor1
+                                 000000ce
+                 __e.security_id
+                                 000000ce
+                 __s.btext
+                                 000000d8
+                 __e.monitor1
+                                 000000d8
+                 __e.btext
+                                 0000012f
+                 __s.btextf
+                                 0000012f
+                 __s.text
+                                 00000178
+                 __e.text
+                                 00000178
+                 __s.textf
+                                 00000178
+                 __s.RLIB
+                                 00000178
+                 __e.RLIB
+                                 00000178
+                 __s.SLIB
+                                 00000178
+                 __e.SLIB
+                                 00000178
+                 __e.btextf
+                                 00000178
+                 __e.textf
+                                 000007fa
+                 __s.constf
+                                 000007fa
+                 __e.constf
+                                 00000a32
+                 __s.data
+                                 00000a32
+                 __e.data
+                                 00000a32
+                 __s.sdata
+                                 00000a32
+                 __e.sdata
+                                 00000a32
+                 __sFSL_BCD
+                                 00000a32
+                 __sFSL_FCD
+                                 00000b32
+                 __eFSL_BCD
+                                 00000b32
+                 __eFSL_FCD
+                                 00000be4
+                 __sFSL_RCD
+                                 00000be4
+                 __eFSL_RCD
+                                 00000c44
+                 __sFSL_BECD
+                                 00000c44
+                 __eFSL_BECD
+                                 00000cc4
+                 __s.monitor2
+                                 0000fe00
+                 __e.monitor2
+                                 00010000
+                 __RAM_ADDR_START
+                                 000fef00
+                 __s.dataR
+                                 000ff300
+                 __e.dataR
+                                 000ff300
+                 __s.stack_bss
+                                 000ff300
+                 __s.bss
+                                 000ff500
+                 __e.bss
+                                 000ff500
+                 __e.stack_bss
+                                 000ff500
+                 __STACK_ADDR_END
+                                 000ff502
+                 __s.sbss
+                                 000ffe20
+                 __e.sbss
+                                 000ffe20
+                 __s.sdataR
+                                 000ffe20
+                 __e.sdataR
+                                 000ffe20
+                 __STACK_ADDR_START
+                                 000ffe20
+                 __RAM_ADDR_END
+                                 000ffee0
